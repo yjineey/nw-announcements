@@ -1,4 +1,4 @@
-# 📖 nw-announcements
+## 📖 nw-announcements
 
 뉴웨이교회 공지사항
 
@@ -71,4 +71,3 @@ nw-announcements/
 ## 📑 라이선스 (License)
 
 © 2025. NEWWAY CHURCH All rights reserved.
-# nw-announcements

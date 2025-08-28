@@ -44,14 +44,14 @@ export default function RootLayout({
           </div>
 
           {/* Header */}
-          <div
+          {/* <div
             className="h-16 px-4 flex items-center justify-between border-b 
              border-gray-200 dark:border-neutral-800 
              sticky top-0 z-30 lg:top-16 lg:z-20
              bg-gray-50 dark:bg-neutral-900"
           >
             <Header />
-          </div>
+          </div> */}
 
           {/* Main Content */}
           <main className="flex-1 flex flex-col mb-16 lg:mb-0">

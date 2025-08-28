@@ -1,0 +1,14 @@
+/* 전역 공통 스타일 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+@import './buttons.css';
+@import './page-layout.css';
+@import './card-layout.css';
+@import './input.css';
+
+body {
+  @apply bg-gray-50 text-gray-800 dark:bg-neutral-900 dark:text-gray-200;
+}

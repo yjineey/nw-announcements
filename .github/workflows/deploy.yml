@@ -1,0 +1,64 @@
+name: Deploy Newway Bread to GitHub Pages
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch: # 수동 실행 허용
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 빌드 작업을 위한 환경 설정
+    env:
+      NEXT_PUBLIC_BASE_PATH: /nw-announcements
+
+    steps:
+      # 1. Checkout
+      - uses: actions/checkout@v4
+
+      # 2. Node & pnpm 설정
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Enable and prepare pnpm@10.12.1 via Corepack
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.12.1 --activate
+          pnpm --version
+
+      # 3. pnpm 캐시
+      - name: Restore pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # 4. 의존성 설치 및 빌드, 정적 export
+      - name: Build and export
+        run: |
+          pnpm build
+
+      # 5. GitHub Pages용 아티팩트 업로드
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

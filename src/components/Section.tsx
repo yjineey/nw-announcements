@@ -11,7 +11,7 @@ export default function Page() {
             alt="nw-header-logo"
             className="w-8 h-auto gap-2"
           />
-          <span>NEWWAY BREAD</span>
+          <span>뉴웨이교회 수련회 안내</span>
         </div>
       </Link>
       <span className="hidden sm:flex">

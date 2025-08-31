@@ -5,12 +5,12 @@ import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
 
 export const metadata = {
-  title: 'Newway Bread',
+  title: '뉴웨이교회 공지사항',
   description: 'Newway Church Bible App',
   openGraph: {
     type: 'website',
     siteName: 'Newway Church',
-    title: 'Newway Bread',
+    title: '뉴웨이교회 공지사항',
     description: 'Newway Church Bible App',
     url: 'https://yjineey.github.io/nw-bread-front/',
     images: [

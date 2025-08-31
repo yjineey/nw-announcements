@@ -2,14 +2,14 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpenText, Heart, HomeIcon, UserIcon, Menu } from 'lucide-react'
+import { Backpack, CalendarClock, HomeIcon, Bus, PhoneCall } from 'lucide-react'
 
 const MobileItems = [
-  { label: '성경', href: '/user/read', icon: BookOpenText },
-  { label: '큐티', href: '/user/qt', icon: Heart },
+  { label: '시간표', href: '/program/schedule', icon: CalendarClock },
+  { label: '준비물', href: '/essential/items', icon: Backpack },
   { label: '홈', href: '/', icon: HomeIcon },
-  { label: '내정보', href: '/auth/profile', icon: UserIcon },
-  { label: '더보기', href: '/settings/more', icon: Menu },
+  { label: '이동', href: '/essential/arrival', icon: Bus },
+  { label: '비상연락망', href: '/care/contacts', icon: PhoneCall },
 ]
 
 export default function BottomNav() {

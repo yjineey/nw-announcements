@@ -1,4 +1,4 @@
-name: Deploy Newway Bread to GitHub Pages
+name: Deploy Newway announcements to GitHub Pages
 
 on:
   push:

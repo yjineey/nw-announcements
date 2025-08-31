@@ -1,49 +1,51 @@
 import Link from 'next/link'
 import {
-  User,
+  Backpack,
+  ListChecks,
   ShieldCheck,
   CalendarClock,
-  Users,
-  BookOpenCheck,
+  Bed,
+  Baby,
   Utensils,
   MapPin,
   Bus,
   ParkingCircle,
   Home,
   PhoneCall,
-  FirstAid,
-  HandsPraying,
-  FileText,
+  Hospital,
+  HeartHandshake,
+  PackageOpen,
 } from 'lucide-react'
 
 const essentialInfo = [
-  { label: '준비물', href: '/essential/items', icon: User },
+  { label: '준비물', href: '/essential/items', icon: Backpack },
+  { label: '체크리스트', href: '/essential/checklist', icon: ListChecks },
   {
-    label: '여행자 보험 안내',
+    label: '여행자 보험',
     href: '/essential/insurance',
     icon: ShieldCheck,
   },
-  { label: '이동 & 등록 안내', href: '/essential/arrival', icon: Bus },
+  { label: '이동 & 등록', href: '/essential/arrival', icon: Bus },
 ]
 
 const programInfo = [
-  { label: '전체 시간표', href: '/program/schedule', icon: CalendarClock },
-  { label: '방 배정표', href: '/program/rooms', icon: Users },
-  { label: '키즈 프로그램', href: '/program/kids', icon: BookOpenCheck },
+  { label: '전체시간표', href: '/program/schedule', icon: CalendarClock },
+  { label: '키즈 활동', href: '/program/kids', icon: Baby },
+  { label: '숙소 배정', href: '/program/rooms', icon: Bed },
   { label: '식단표', href: '/program/meal', icon: Utensils },
 ]
 
 const facilityInfo = [
-  { label: '수련회 주소', href: '/facility/address', icon: MapPin },
-  { label: '주차장 안내', href: '/facility/parking', icon: ParkingCircle },
-  { label: '시설 안내', href: '/facility/info', icon: Home },
-  { label: '연수원 제공 물품', href: '/facility/items', icon: FileText },
+  { label: '부대 시설', href: '/facility/info', icon: Home },
+  { label: '제공 물품', href: '/facility/items', icon: PackageOpen },
+  { label: '행사 장소', href: '/facility/address', icon: MapPin },
+  { label: '주차 안내', href: '/facility/parking', icon: ParkingCircle },
 ]
 
 const careInfo = [
   { label: '비상연락망', href: '/care/contacts', icon: PhoneCall },
-  { label: '응급 관련 안내', href: '/care/emergency', icon: FirstAid },
-  { label: '중보기도 요청', href: '/care/prayer', icon: HandsPraying },
+  { label: '응급 안내', href: '/care/emergency', icon: Hospital },
+  { label: '중보기도', href: '/care/prayer', icon: HeartHandshake },
 ]
 
 export default function Page() {

@@ -6,18 +6,17 @@ import BottomNav from '@/components/BottomNav'
 import { imgPath } from '@/lib/imgPath'
 
 export const metadata = {
-  title: '뉴웨이교회 공지사항',
-  description: '뉴웨이교회 수련회 공지사항입니다',
+  title: 'DIVE TO THE LORD',
+  description: '뉴웨이교회 여름 수련회 공지사항입니다',
   openGraph: {
     type: 'website',
     siteName: 'Newway Church',
-    title: '뉴웨이교회 공지사항',
-    description: '뉴웨이교회 수련회 공지사항입니다',
-    url: 'https://yjineey.github.io/nw-bread-front/',
+    title: 'DIVE TO THE LORD',
+    description: '뉴웨이교회 여름 수련회 공지사항입니다',
+    url: 'https://yjineey.github.io/nw-announcements/',
     images: [
       {
-        url: `url(${imgPath('/logos/divetothelord.jpg')})`,
-        // url: 'https://cdn.imweb.me/upload/S2023020869d0205dba053/94d155e4d81c7.png',
+        url: 'https://cdn.imweb.me/upload/S2023020869d0205dba053/94d155e4d81c7.png',
         width: 1200,
         height: 630,
       },

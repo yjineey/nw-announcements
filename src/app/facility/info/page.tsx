@@ -1,5 +1,15 @@
 export default function InfoPage() {
-  const verse = `부대 시설 페이지 입니다.`
+  // const heart = ['']
+  const info = ['수건', '드라이기 (3인실 1개, 12인실 2개)', '샴푸,바디워시']
+  // const warning = ['']
+  // const error = ['']
+
+  const list = [
+    // ...heart.map(text => ({ text, icon: '⭐' })),
+    ...info.map(text => ({ text, icon: '✅' })),
+    // ...warning.map(text => ({ text, icon: 'ℹ️' })),
+    // ...error.map(text => ({ text, icon: '❌' })),
+  ]
 
   return (
     <div className="page-wrapper">
@@ -7,9 +17,18 @@ export default function InfoPage() {
         <h1 className="page-header-title p-4">부대 시설</h1>
       </div>
 
-      <div className="min-h-[500px] px-6">
+      <div className="min-h-[500px] px-2">
         <div className="whitespace-pre-line text-sm leading-relaxed ">
-          {verse}
+          <div className="min-h-[500px] px-6 space-y-5">
+            <ul className="space-y-3">
+              {list.map(({ text, icon }) => (
+                <li key={text} className="flex items-start gap-3">
+                  <span className="mt-0.5 select-none">{icon}</span>
+                  {text}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

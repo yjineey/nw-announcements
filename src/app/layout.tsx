@@ -7,12 +7,12 @@ import { imgPath } from '@/lib/imgPath'
 
 export const metadata = {
   title: '뉴웨이교회 공지사항',
-  description: 'Newway Church Bible App',
+  description: '뉴웨이교회 수련회 공지사항입니다',
   openGraph: {
     type: 'website',
     siteName: 'Newway Church',
     title: '뉴웨이교회 공지사항',
-    description: 'Newway Church Bible App',
+    description: '뉴웨이교회 수련회 공지사항입니다',
     url: 'https://yjineey.github.io/nw-bread-front/',
     images: [
       {

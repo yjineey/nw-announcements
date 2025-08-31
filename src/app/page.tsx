@@ -38,7 +38,7 @@ const programInfo = [
 const facilityInfo = [
   { label: '부대 시설', href: '/facility/info', icon: Home },
   { label: '제공 물품', href: '/facility/items', icon: PackageOpen },
-  { label: '행사 장소', href: '/facility/address', icon: MapPin },
+  { label: '장소', href: '/facility/address', icon: MapPin },
   { label: '주차 안내', href: '/facility/parking', icon: ParkingCircle },
 ]
 

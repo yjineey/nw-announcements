@@ -9,7 +9,7 @@ const MobileItems = [
   { label: '준비물', href: '/essential/items', icon: Backpack },
   { label: '홈', href: '/', icon: HomeIcon },
   { label: '이동', href: '/essential/arrival', icon: Bus },
-  { label: '비상연락망', href: '/care/contacts', icon: PhoneCall },
+  { label: '비상연락', href: '/care/contacts', icon: PhoneCall },
 ]
 
 export default function BottomNav() {

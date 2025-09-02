@@ -3,6 +3,7 @@ import Section from '@/components/Section'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
+import { imgPath } from '@/lib/imgPath'
 
 export const metadata = {
   title: 'DIVE TO THE LORD',
@@ -12,10 +13,10 @@ export const metadata = {
     siteName: 'Newway Church',
     title: 'DIVE TO THE LORD',
     description: '뉴웨이교회 여름 수련회 공지사항입니다',
-    url: 'https://yjineey.github.io/nw-announcements/',
+    url: 'https://yjineey.github.io/nw-news/',
     images: [
       {
-        url: '/meta/2025_summer_retreat.jpg',
+        url: imgPath('/meta/2025_summer_retreat.jpg'),
         width: 1200,
         height: 630,
       },

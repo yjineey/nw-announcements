@@ -1,4 +1,4 @@
-## 📖 nw-announcements
+## 📖 nw-news
 
 뉴웨이교회 공지사항
 
@@ -30,7 +30,7 @@ pnpm start
 ## 📁 폴더 구조
 
 ```bash
-nw-announcements/
+nw-news/
 ├── public/                       # 정적 파일 (이미지, 폰트, favicon 등)
 │
 ├── src/

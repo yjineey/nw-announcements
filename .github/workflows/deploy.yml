@@ -1,4 +1,4 @@
-name: Deploy Newway announcements to GitHub Pages
+name: Deploy Newway news to GitHub Pages
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest # 빌드 작업을 위한 환경 설정
     env:
-      NEXT_PUBLIC_BASE_PATH: /nw-announcements
+      NEXT_PUBLIC_BASE_PATH: /nw-news
 
     steps:
       # 1. Checkout

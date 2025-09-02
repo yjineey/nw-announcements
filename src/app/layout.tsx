@@ -15,7 +15,7 @@ export const metadata = {
     url: 'https://yjineey.github.io/nw-announcements/',
     images: [
       {
-        url: 'https://cdn.imweb.me/upload/S2023020869d0205dba053/94d155e4d81c7.png',
+        url: '/meta/2025_summer_retreat.jpg',
         width: 1200,
         height: 630,
       },

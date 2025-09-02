@@ -3,7 +3,6 @@ import Section from '@/components/Section'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BottomNav from '@/components/BottomNav'
-import { imgPath } from '@/lib/imgPath'
 
 export const metadata = {
   title: 'DIVE TO THE LORD',
@@ -35,7 +34,7 @@ export default function RootLayout({
       <body>
         <div className="max-w-screen-lg mx-auto min-h-screen flex flex-col">
           {/* Section */}
-          <div className="h-16 lg:sticky lg:top-0 lg:z-20">
+          <div className="h-16 lg:sticky lg:top-0 lg:z-30">
             <Section />
           </div>
 

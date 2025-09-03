@@ -16,7 +16,7 @@ export const metadata = {
     url: 'https://yjineey.github.io/nw-news/',
     images: [
       {
-        url: imgPath('/meta/2025_summer_retreat.jpg'),
+        url: 'https://yjineey.github.io/nw-news/meta/2025_summer_retreat.jpg',
         width: 1200,
         height: 630,
       },
